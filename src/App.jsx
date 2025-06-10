@@ -5,7 +5,7 @@ function App() {
     const [likesCount, setLikesCount] = useState(0);
   
     const increaseLikes = () => {
-      setLikesCount((likesCount) => likesCount + 1);
+      setLikesCount((prevLikesCount) => prevLikesCount + 1);
     };
   
     return (
